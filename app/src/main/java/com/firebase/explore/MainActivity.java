@@ -184,7 +184,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     private void changeButtonsVisibility(boolean hide) {
         for (int i = 0; i <answerButtons.length ; i++) {
-
             if(hide){
                 answerButtons[i].setVisibility(View.INVISIBLE);
             }else{
