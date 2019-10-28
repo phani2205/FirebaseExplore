@@ -1,18 +1,85 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+
     <TextView
+        android:id="@+id/question_tv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        android:text="TextView"
+        android:textFontWeight="100"
+        android:textSize="20sp" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_marginTop="40dp"
+        android:id="@+id/ans_row_one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/question_tv"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/optionA"
+            android:layout_marginLeft="10dp"
+            android:background="@color/colorAccent"
+            android:layout_width="0dp"
+            android:layout_margin="5dp"
+            android:layout_height="wrap_content"
+            android:text="option A"
+            android:layout_weight=".5" />
+
+        <Button
+            android:id="@+id/optionB"
+            android:layout_marginRight="10dp"
+            android:background="@color/colorAccent"
+            android:layout_margin="5dp"
+            android:layout_width="0dp"
+            android:text="option B"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+
+        android:id="@+id/ans_row_two"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ans_row_one"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/optionC"
+            android:layout_marginLeft="10dp"
+            android:background="@color/colorAccent"
+            android:layout_width="0dp"
+            android:layout_margin="5dp"
+            android:layout_height="wrap_content"
+            android:text="option C"
+            android:layout_weight=".5" />
+
+        <Button
+            android:id="@+id/optionD"
+            android:layout_marginRight="10dp"
+            android:background="@color/colorAccent"
+            android:layout_margin="5dp"
+            android:layout_width="0dp"
+            android:text="option D"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

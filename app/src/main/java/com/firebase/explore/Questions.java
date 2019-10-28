@@ -1,11 +1,13 @@
 package com.firebase.explore;
 
+import java.util.List;
+
 public class Questions {
     private String question;
 
-    private String[] answers;
+    private List<String> answers;
 
-    private String correctIndex;
+    private int correctIndex;
 
     public String getQuestion() {
         return question;
@@ -15,19 +17,19 @@ public class Questions {
         this.question = question;
     }
 
-    public String[] getAnswers() {
+    public List<String> getAnswers() {
         return answers;
     }
 
-    public void setAnswers(String[] answers) {
+    public void setAnswers(List<String> answers) {
         this.answers = answers;
     }
 
-    public String getCorrectIndex() {
+    public int getCorrectIndex() {
         return correctIndex;
     }
 
-    public void setCorrectIndex(String correctIndex) {
+    public void setCorrectIndex(int correctIndex) {
         this.correctIndex = correctIndex;
     }
 
